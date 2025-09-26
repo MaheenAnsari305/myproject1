@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
+button {
+  background: linear-gradient(135deg, #e63946, #ff6b81);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(230, 57, 70, 0.4);
+}
+
+/* ✅ Common Section Fix (full width) */
+section {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e63946, #ff6b81, #d63384);
+  color: #fff;
+  text-align: center;
+}
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+}
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero-img img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Features Section */
+.features {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.feature-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Steps Section */
+.steps {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fef1f1;
+}
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.step-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Download Section */
+.download {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e63946, #ff6b81, #d63384);
+  color: #fff;
+}
+.download-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.download-buttons img {
+  border-radius: 10px;
+  width: 140px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.download-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-img img {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  button {
+    width: 100%;
+  }
+}
